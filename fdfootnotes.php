@@ -140,6 +140,7 @@ function fdfootnote_convert($content) {
 
 		if (!$linksingle) {
 			$content .= "<div class='footnotes' id='footnotes-$post_id'>";
+            $content .= "<style>.footnotes > ol > li { margin-bottom: 15px;}</style>";
 			$content .= "<div class='footnotedivider'></div>";
 
 			if ($collapse) {
